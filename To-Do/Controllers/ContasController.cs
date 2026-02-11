@@ -18,7 +18,7 @@ using To_Do.Repositories;
 
 namespace To_Do.Controllers
 {
-    [RoutePrefix("api/contas")]
+    [RoutePrefix("api/conta")]
     public class ContasController : ApiController
     {
         private readonly Log log;
