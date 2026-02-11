@@ -1,0 +1,80 @@
+Data: 2026-02-10 20:54:43
+Mensagem: The entity type ApplicationUser is not part of the model for the current context.
+StackTrace:    em System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   em System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   em System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   em System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   em Microsoft.AspNet.Identity.EntityFramework.UserStore`6.<GetUserAggregateAsync>d__67.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNet.Identity.TaskExtensions.CultureAwaiter`1.GetResult()
+   em Microsoft.AspNet.Identity.UserValidator`2.<ValidateUserName>d__14.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNet.Identity.UserValidator`2.<ValidateAsync>d__13.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNet.Identity.UserManager`2.<CreateAsync>d__73.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNet.Identity.UserManager`2.<CreateAsync>d__79.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   em To_Do.Repositories.ContaRepository.<CreateAsync>d__3.MoveNext() na C:\Users\werbi\Documents\Projetos\Backend\To-Do\To-Do\Repositories\ContaRepository.cs:linha 30
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   em To_Do.Controllers.ContasController.<Register>d__5.MoveNext() na C:\Users\werbi\Documents\Projetos\Backend\To-Do\To-Do\Controllers\ContasController.cs:linha 49
+---------------------------------------------------------------
+Data: 2026-02-10 21:27:32
+Mensagem: The model backing the 'ApplicationContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+StackTrace:    em System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   em System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   em System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   em System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   em System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   em System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   em System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   em System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   em Microsoft.AspNet.Identity.EntityFramework.UserStore`6.<GetUserAggregateAsync>d__67.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNet.Identity.TaskExtensions.CultureAwaiter`1.GetResult()
+   em Microsoft.AspNet.Identity.UserValidator`2.<ValidateUserName>d__14.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNet.Identity.UserValidator`2.<ValidateAsync>d__13.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNet.Identity.UserManager`2.<CreateAsync>d__73.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNet.Identity.UserManager`2.<CreateAsync>d__79.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   em To_Do.Repositories.ContaRepository.<CreateAsync>d__3.MoveNext() na C:\Users\werbi\Documents\Projetos\Backend\To-Do\To-Do\Repositories\ContaRepository.cs:linha 30
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   em To_Do.Controllers.ContasController.<Register>d__5.MoveNext() na C:\Users\werbi\Documents\Projetos\Backend\To-Do\To-Do\Controllers\ContasController.cs:linha 49
+---------------------------------------------------------------
